@@ -13,12 +13,17 @@
 
 
     <script>
-       //Input
-       const person = {
-        name: "Kate",
-        age: 19,
-        gender: "Female"
-       }
+       //Input and creating a class named Person
+       class Person {
+            constructor(name, age, gender) {
+                this.name = name;
+                this.age = age;
+                this.gender = gender;
+            }
+        }
+
+        // Create an instance of Person
+        const person = new Person("Katelyn", 19, "Female");
 
 
         //Process and Output
