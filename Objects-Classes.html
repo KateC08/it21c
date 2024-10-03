@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello World, It's OOP!!</h1>
+    <h1 id="person-name"></h1>
+    <h1 id="person-age"></h1>
+    <h1 id="person-gender"></h1>
+
+
+    <script>
+       //Input
+       const person = {
+        name: "Kate",
+        age: 19,
+        gender: "Female"
+       }
+
+
+        //Process and Output
+
+        //Solution 1: Display via console.log
+        console.log("Name: " + person.name);
+        console.log("Age: "  +person.age);
+        console.log("Gender: " + person.gender);
+
+        //Solution 2: Display via HTML
+        document.getElementById("person-name").innerHTML = "Name: " + person.name;
+        document.getElementById("person-age").innerHTML = "Age: " + person.age;
+        document.getElementById("person-gender").innerHTML = "Gender: " + person.gender;
+
+
+    </script>
+</body>
+</html>
