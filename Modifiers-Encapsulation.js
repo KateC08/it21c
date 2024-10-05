@@ -43,3 +43,6 @@ class Person {
 
 //Creating an instance of the Person Class
 const person1 = new Person('keyt', 19, 'Female', '4/11', 45);
+
+//Calling method
+person1.displayInfo();
