@@ -36,8 +36,10 @@ class Person {
         console.log("Name: " + this.name);
         console.log("Age: " + this.age);
         console.log("Gender: " + this.gender);
+        console.log("Height: " + this.height);
+        console.log("Weight: " + this.weight);
     }
 }
 
 //Creating an instance of the Person Class
-const person1 = new Person('keyt', 19, 'Female');
+const person1 = new Person('keyt', 19, 'Female', '4/11', 45);
