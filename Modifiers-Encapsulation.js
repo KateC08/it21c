@@ -38,3 +38,6 @@ class Person {
         console.log("Gender: " + this.gender);
     }
 }
+
+//Creating an instance of the Person Class
+const person1 = new Person('keyt', 19, 'Female');
