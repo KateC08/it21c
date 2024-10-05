@@ -30,4 +30,11 @@ class Person {
     get weight() {
         return this.#weight;
     }
+
+    //Displays output via Console.log
+    displayInfo() {
+        console.log("Name: " + this.name);
+        console.log("Age: " + this.age);
+        console.log("Gender: " + this.gender);
+    }
 }
