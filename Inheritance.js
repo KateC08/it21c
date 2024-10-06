@@ -40,7 +40,9 @@ class Person {
         `;
     }
 }
+
+class Student extends Person {
+    
+}
 //Declaring an instance to access the person class
 const person1 = new Person('kie', 19, 'Female');
-
-
