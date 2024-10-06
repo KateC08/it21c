@@ -42,7 +42,12 @@ class Person {
 }
 
 class Student extends Person {
-    
+
+    //Constructor
+    constructor(name, age, gender, year, degree) {
+        this.year = year;
+        this.degree = degree; 
+    }
 }
 //Declaring an instance to access the person class
 const person1 = new Person('kie', 19, 'Female');
