@@ -48,6 +48,13 @@ class Student extends Person {
         this.year = year;
         this.degree = degree; 
     }
+
+    //Overriding the displayInfo method from Person class
+    displayInfo() {
+        super.displayInfo();
+        console.log("Year: " + this.year);
+        console.log("Degree: " + this.degree);
+    }
 }
 //Declaring an instance to access the person class
 const person1 = new Person('kie', 19, 'Female');
