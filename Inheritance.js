@@ -65,5 +65,6 @@ class Student extends Person {
         `;
     }
 }
-//Declaring an instance to access the person class
-const person1 = new Person('kie', 19, 'Female');
+//Declaring an instance to access the Student class
+const student1 = new Student('kie', 19, 'Female', '2nd year', 'BSIT');
+
