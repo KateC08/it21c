@@ -17,4 +17,8 @@ class Person {
     get age() {
         return this.#age;
     }
+
+    get gender() {
+        return this.#gender;
+    }
 }
