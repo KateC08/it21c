@@ -9,8 +9,7 @@
     <h1>Topic 4 - Inheritance</h1>
     <h1 id="person1"></h1>
 
-    <script>
-
+<script>
     class Person {
        //Private Data Fields
        #name;
@@ -45,11 +44,11 @@
 
     //Method that Displays output via HTML
     displayInfoViaHTML() {
-        const personElement = documentElementById('person1');
+        const personElement = document.getElementById('person1');
         personElement.innerHTML = `
           <strong>Name: </strong> ${this.name} <br>
           <strong>Age: </strong> ${this.age} <br>
-          <strong>Gender: </strong> ${this.gender} <br>
+          <strong>Gender: </strong> ${this.gender} 
         `;
     }
 }
@@ -71,12 +70,13 @@ class Student extends Person {
 
     displayInfoViaHTML() {
         super.displayInfoViaHTML();
-        const personElement = documentElementById('person1');
-        personElement.innerHTML = `
-           <strong> Year: </strong> ${this.year} <br>
+        const personElement = document.getElementById('person1');
+        personElement.innerHTML += `
+           <br> <strong> Year: </strong> ${this.year} <br>
            <strong> Degree: </strong> ${this.degree}
         `;
     }
+   
 }  
 //Declaring an instance to access the Student class
 const student1 = new Student('kie', 19, 'Female', '2nd year', 'BSIT');
