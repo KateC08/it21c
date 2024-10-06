@@ -30,4 +30,14 @@ class Person {
 
     }
 
+    //Method that Displays output via HTML
+    displayInfoViaHTML() {
+        const personElement = documentElementById('person1');
+        personElement.innerHTML = `
+          <strong>Name: </strong> ${this.name} <br>
+          <strong>Age: </strong> ${this.age} <br>
+          <strong>Gender: </strong> ${this.gender} <br>
+        `;
+    }
+
 }
