@@ -10,7 +10,7 @@
     <h1 id="person1"></h1>
 
     <script>
-        
+
     class Person {
        //Private Data Fields
        #name;
@@ -22,6 +22,18 @@
         this.#age = age;
         this.#gender = gender;
       }
+         //getters method
+    get name() {
+        return this.#name;
+    }
+
+    get age() {
+        return this.#age;
+    }
+
+    get gender() {
+        return this.#gender;
+    }
      }
     </script>
 </body>
