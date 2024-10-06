@@ -55,6 +55,15 @@ class Student extends Person {
         console.log("Year: " + this.year);
         console.log("Degree: " + this.degree);
     }
+
+    displayInfoViaHTML() {
+        super.displayInfoViaHTML();
+        const personElement = documentElementById('person1');
+        personElement.innerHTML = `
+           <strong> Year: </strong> ${this.year} <br>
+           <strong> Degree: </strong> ${this.degree}
+        `;
+    }
 }
 //Declaring an instance to access the person class
 const person1 = new Person('kie', 19, 'Female');
