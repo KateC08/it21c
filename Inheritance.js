@@ -3,13 +3,13 @@ class Person {
     #name;
     #age;
     #gender;
-
+    //constructor with three parameters
     constructor(name, age, gender) {
         this.#name = name;
         this.#age = age;
         this.#gender = gender;
     }
-
+    //getters method
     get name() {
         return this.#name;
     }
@@ -21,4 +21,5 @@ class Person {
     get gender() {
         return this.#gender;
     }
+
 }
