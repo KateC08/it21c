@@ -9,4 +9,8 @@ class Person {
         this.#age = age;
         this.#gender = gender;
     }
+
+    get name() {
+        return this.#name;
+    }
 }
