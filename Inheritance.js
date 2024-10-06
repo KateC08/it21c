@@ -22,4 +22,12 @@ class Person {
         return this.#gender;
     }
 
+    //Method that Displays output via console.log
+    displayInfo() {
+        console.log("Name: " + this.name);
+        console.log("Age: " + this.age);
+        console.log("Gender: " + this.gender);
+
+    }
+
 }
