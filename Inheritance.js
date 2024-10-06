@@ -39,5 +39,8 @@ class Person {
           <strong>Gender: </strong> ${this.gender} <br>
         `;
     }
-
 }
+//Declaring an instance to access the person class
+const person1 = new Person('kie', 19, 'Female');
+
+
