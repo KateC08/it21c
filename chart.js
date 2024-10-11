@@ -30,4 +30,11 @@ class ChartCreator {
     }
 }
 class LineChart extends ChartCreator {
+    constructor(dataUrl) {
+        super(dataUrl);
+        this.lineCtx = document.getElementById('lineChart');
+    }
+    createCharts() {
+        this.createLineChart(); 
+    }
 }
