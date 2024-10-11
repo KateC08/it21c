@@ -29,3 +29,5 @@ class ChartCreator {
         throw new Error('createCharts() must be implemented in subclasses');
     }
 }
+class LineChart extends ChartCreator {
+}
