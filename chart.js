@@ -96,6 +96,17 @@ class LineChart extends ChartCreator {
         new Chart(this.lineCtx, config); 
     }
 }
+class BarChart extends ChartCreator {
+    constructor(dataUrl) {
+        super(dataUrl);
+        this.barCtx = document.getElementById('barChart');
+    }
+
+   
+}
+
+
+
 // Initialize the line chart
 const lineChartCreator = new LineChart('data.json');
 lineChartCreator.init();
