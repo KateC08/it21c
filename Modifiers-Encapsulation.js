@@ -38,11 +38,23 @@ class Person {
         console.log("Gender: " + this.gender);
         console.log("Height: " + this.height);
         console.log("Weight: " + this.weight);
+
+         //Displays output via Web page
+         const info= `
+            Name: ${this.name} <br>
+            Age: ${this.age} <br>
+            Gender: ${this.gender} <br>
+            Height: ${this.gender} <br>
+            Weight: ${this.weight} <br>
+         `;
+        document.getElementById('person3').innerHTML = info;
     }
+
+   
 }
 
 //Creating an instance of the Person Class
-const person1 = new Person('keyt', 19, 'Female', '4/11', 45);
+const person3 = new Person('keyt', 19, 'Female', '4/11', 45);
 
 //Calling method
-person1.displayInfo();
+person3.displayInfo();

@@ -24,20 +24,21 @@ class Person {
        console.log("Name: " + this.name);
        console.log("Age: "  + this.age);
        console.log("Gender: " + this.gender);
-    }
+
     //Solution 2: Display via HTML
-    displayViaHTML() {
-        const personElement = document.getElementById('person1');
-        personElement.innerHTML = `
-            <strong>Name:</strong> ${this.name}<br>
-            <strong>Age:</strong> ${this.age}<br>
-            <strong>Gender:</strong> ${this.gender}
-        `;
+    const p2 = `
+    Name: ${this.name} <br>
+    Age: ${this.age} <br>
+    Gender: ${this.gender} <br>
+    `;
+
+       document.getElementById('person2').innerHTML = p2;   
     }
 }
 
 // Create an instance of Person
-const person1 = new Person("Katelyn", 19, "Female");
+const person2 = new Person("Katelyn", 19, "Female");
 
 //Calls the method
-person1.displayInfo();
+person2.displayInfo();
+person2.displayInfoViaHTML();

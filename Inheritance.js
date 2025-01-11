@@ -28,17 +28,15 @@ class Person {
         console.log("Age: " + this.age);
         console.log("Gender: " + this.gender);
 
+        const p1 = `
+        Name:  ${this.name} <br>
+        Age:  ${this.age} <br>
+        Gender: ${this.gender} <br>
+        `;
+
+        document.getElementById('st').innerHTML += p1;
     }
 
-    //Method that Displays output via HTML
-    displayInfoViaHTML() {
-        const personElement = documentElementById('person1');
-        personElement.innerHTML = `
-          <strong>Name: </strong> ${this.name} <br>
-          <strong>Age: </strong> ${this.age} <br>
-          <strong>Gender: </strong> ${this.gender} <br>
-        `;
-    }
 }
 
 class Student extends Person {
@@ -52,18 +50,19 @@ class Student extends Person {
 
     //Overriding the displayInfo method from Person class
     displayInfo() {
+        
         super.displayInfo();
+
         console.log("Year: " + this.year);
         console.log("Degree: " + this.degree);
-    }
 
-    displayInfoViaHTML() {
-        super.displayInfoViaHTML();
-        const personElement = documentElementById('person1');
-        personElement.innerHTML = `
-           <strong> Year: </strong> ${this.year} <br>
-           <strong> Degree: </strong> ${this.degree}
+        
+        const s1 = `
+            Year: ${this.year} <br>
+            Degree: ${this.degree} <br>
         `;
+
+        document.getElementById('st').innerHTML += s1;
     }
 }
 //Declaring an instance to access the Student class
