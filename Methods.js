@@ -11,8 +11,37 @@ const person = {
    console.log("Gender: " + person.gender);  
    console.log("~~~~~~~~~~~~~~~~~~~~~~~~");
 
-   //Class named Person
+
 class Person {
+    constructor(name, age, gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+    }
+
+    displaysInfo() {
+        //Displays via console.log
+        console.log("Name: " + this.name);
+        console.log("Age: " + this.age);
+        console.log("Gender: " + this.gender);
+
+        //Displays via web page
+        const p2 = `
+           Name: ${this.name} <br>
+           Age: ${this.age} <br>
+           Gender: ${this.gender} <br>
+        `;
+
+        document.getElementById('person2').innerHTML = p2;
+    }
+}
+
+const person2 = new Person("Colet Vergara", 25, "Female");
+
+person2.displaysInfo();
+
+//Class named Person
+/*class Person {
     constructor(name, age, gender) {
         this.name = name;
         this.age = age;
@@ -34,11 +63,11 @@ class Person {
 
        document.getElementById('person2').innerHTML = p2;   
     }
-}
+} 
 
 // Create an instance of Person
 const person2 = new Person("Katelyn", 19, "Female");
 
 //Calls the method
 person2.displayInfo();
-person2.displayInfoViaHTML();
+person2.displayInfoViaHTML(); */
